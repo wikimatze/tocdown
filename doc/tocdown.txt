@@ -6,30 +6,34 @@ Making Vim more user friendly when dealing with long markdown-files
 CONTENTS                                       *Tocdown-contents*
   1. Intro..................|TocdownIntro|
   2. Usage..................|TocdownUsage|
-  3. License................|TocdownLicense|
-  4. Bugs...................|TocdownBugs|
-  5. Contributing ..........|TocdownContributing|
-  6. Changelog .............|TocdownChangelog|
-  7. Credits ...............|TocdownCredits|
+  3. Installation...........|TocdownInstallation|
+  4. License................|TocdownLicense|
+  5. Bugs...................|TocdownBugs|
+  6. Contributing ..........|TocdownContributing|
+  7. Changelog .............|TocdownChangelog|
+  8. Credits ...............|TocdownCredits|
 
 ==================================================================
-1. Intro                                              *TocdownIntro*
+1. Intro                                            *TocdownIntro*
 
-When you are writing a lon documents and you want to get a fast
-overview about the headlines you have, you want to open a separate
-window to show you briefly the structure of your document.
+When you are writing a tons of documents in markdown with many
+headings and you want to get an overview about all the  headlines
+you have, would it be very handy to have shortcut in Vim to simply
+give you a structured representation of all the heading you have
+in your large markdown file?
 
-I got highly inspired by the taglist.vim plugin which provided the
-same functionality just for variables and functions for all kinds
-of different programming languages.
-
-I got stuck what I have done when writing a large book in the
-markdown format.
+The great taglist.vim plugin solved the problem already for
+variables and functions of many different programming languages but
+not for plain markdown-files. That's why I wrote tocdown.
 
 ==================================================================
-2. Usage                                              *TocdownUsage*
+2. Usage                                            *TocdownUsage*
 
-When you know what how you want to use this plugin, you can use
+Simply press :TocdownToggle and the extra window with the headline
+of the current file will open. If you call :TocdownToggle again,
+the window will be closed.
+
+When you know how you want to use this plugin, you can use
 a custom mapping in your |:vimrc| to toggle the toc of a md-file
 
   nnoremap <F2> :TocdownToggle
@@ -37,18 +41,22 @@ a custom mapping in your |:vimrc| to toggle the toc of a md-file
 You can change the mapping to your needs.
 
 ==================================================================
-3. License                                          *TocdownLicense*
+3. Installation                              *TocdownInstallation*
+
+
+==================================================================
+4. License                                          *TocdownLicense*
 
 MIT.
 
 ==================================================================
-4. Bugs                                                *TocdownBugs*
+5. Bugs                                              *TocdownBugs*
 
 Any bugs by you can be posted on the github page of this
 project: https://github.com/matthias-guenther/tocdown/issues
 
 ==================================================================
-5. Contributing                                *TocdownContributing*
+6. Contributing                              *TocdownContributing*
 
 If you have ideas for further features, code improvements, or do
 you know what advanced features of the vimscripting I can use in
@@ -57,13 +65,13 @@ my project? Fork the project on github and send a pull request.
 https://github.com/matthias-guenther/tocdown
 
 ==================================================================
-6. Changelog                                      *TocdownChangelog*
+7. Changelog                                    *TocdownChangelog*
 
 v1.0.0
   * initial stable release
 
 ==================================================================
-7. Credits                                          *TocdownCredits*
+8. Credits                                        *TocdownCredits*
 
 I got highly inspired by Inspired be gundo.vim, nerdtree.vim, and
 taglist.vim. If you want to learn programming vim:
@@ -71,3 +79,4 @@ taglist.vim. If you want to learn programming vim:
   :help vim-script-intro
 
 is a great way to start the hacking.
+
