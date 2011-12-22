@@ -43,6 +43,11 @@ You can change the mapping to your needs.
 ==================================================================
 3. Installation                              *TocdownInstallation*
 
+Unzip the most recent ZIP
+(https://github.com/matthias-guenther/tocdown/zipball/master) archive file
+inside your Vim profile directory (usually  `~/.vim`). The plugin is compatible
+with Tim Popes pathogen script.
+
 
 ==================================================================
 4. License                                          *TocdownLicense*
