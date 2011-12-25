@@ -34,11 +34,13 @@ of the current file will open. If you call :TocdownToggle again,
 the window will be closed.
 
 When you know how you want to use this plugin, you can use
-a custom mapping in your |:vimrc| to toggle the toc of a md-file
+a custom mapping in your |:vimrc| to toggle the toc of a
+markdown-file
 
-  nnoremap <F2> :TocdownToggle
+  nnoremap <F2> :TocdownToggle<CR>
 
-You can change the mapping to your needs.
+Now you can press F2 to call the function. If this button is not free for your
+configuration, just, you can change the mapping to your needs.
 
 ==================================================================
 3. Installation                              *TocdownInstallation*
@@ -72,6 +74,8 @@ https://github.com/matthias-guenther/tocdown
 ==================================================================
 7. Changelog                                    *TocdownChangelog*
 
+v1.0.1
+  * better Ruby script, faster generation of the headline
 v1.0.0
   * initial stable release
 

@@ -31,7 +31,7 @@ function! s:TocdownToggle()
   else
     " open a new window for the toclist of the markdown headings
     " silent press enter when external command demands it
-    exe 'silent :!ruby ' . g:plugin_path . '/tocdown.rb ' . g:plugin_path . '/.tocdown.txt ' . g:current_file
+    exe 'silent :!ruby ' . g:plugin_path . '/tocdown.rb ' . g:current_file . ' ' . g:plugin_path . '/.tocdown.txt '
     " open a new window with the buffername _Tocdown_
     exe 'botright vnew _Tocdown_'
     " read the parsed headlines into the the buffer with the _Tocdown_
