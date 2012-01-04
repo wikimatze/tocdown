@@ -1,6 +1,5 @@
 Tocdown.vim is a Vim plugin to to display the headlines of a markdown document in an extra window.
 
-
 ## Description ##
 
 When you are writing a tons of documents in markdown with many headings and you want to get an
@@ -9,6 +8,11 @@ give you a structured representation of all the heading you have in your large m
 
 The great taglist.vim plugin solved the problem already for variables and functions of many
 different programming languages but not for plain markdown-files. That's why I wrote tocdown.
+
+
+## Screencast ##
+
+<iframe src="http://www.screenr.com/embed/zvos" width="650" height="396" frameborder="0"></iframe>
 
 
 ## Installation ##
