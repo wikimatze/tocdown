@@ -12,7 +12,7 @@ different programming languages but not for plain markdown-files. That's why I w
 
 ## Screencast ##
 
-<iframe src="http://www.screenr.com/embed/zvos" width="650" height="396" frameborder="0"></iframe>
+http://www.screenr.com/zvos
 
 
 ## Installation ##
