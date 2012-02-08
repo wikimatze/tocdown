@@ -77,10 +77,22 @@ Feature request, bugs, questions, etc. can be send to <matthias.guenther@wikimat
 fork this project.
 
 
+## Self-Promotion ##
+
+Like tocdown.vim? Then follow the repository on [GitHub][github] and vote for it on
+[vim.org][vim.org]. And if you're feeling especially charitable, follow [wikimatze][wikimatze] on
+[Twitter][wikimatze-twitter] and [GitHub][wikimatze-github].
+
+
 ## License ##
 
 This software is licensed under the [MIT license][mit].
 
-© 2011 Matthias Guenther <matthias.guenther@wikimatze.de>.
+© 2011-2012 Matthias Guenther <matthias.guenther@wikimatze.de>.
 
+[wikimatze]: http://wikimatze.de
+[wikimatze-twitter]: https://twitter.com/wikimatze
+[wikimatze-github]: https://github.com/matthias-guenther
+[github]: https://github.com/matthias-guenther/tocdown
+[vim.org]: http://www.vim.org/scripts/script.php?script_id=3856
 [mit]: http://en.wikipedia.org/wiki/MIT_License
