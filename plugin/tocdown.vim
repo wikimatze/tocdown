@@ -20,24 +20,30 @@ command TocdownToggle call s:TocdownToggle()
 " :h suffix drops the last pathname component
 let g:plugin_path = escape(expand('<sfile>:p:h'), '\')
 
-" get the current edited file
-" % says the current file and
-let g:current_file = fnamemodify("%", ":p")
-
 function! s:TocdownToggle()
+  " get the current edited file
+  " % says the current file and
+  let current_file = fnamemodify("%", ":p")
+
   if s:TocdownToggleVisible()
     " quit the buffer for headlines
     exe ':bdelete! _Tocdown_'
   else
+    " store the current window number so we can go back to it
+    let current_window = winnr(bufnr('%'))
+
     " open a new window for the toclist of the markdown headings
     " silent press enter when external command demands it
-    exe 'silent :!ruby ' . g:plugin_path . '/tocdown.rb ' . g:current_file . ' ' . g:plugin_path . '/.tocdown.txt '
+    exe ':silent !ruby ' . g:plugin_path . '/tocdown.rb ' . current_file . ' ' . g:plugin_path . '/.tocdown.txt '
     " open a new window with the buffername _Tocdown_
-    exe 'botright vnew _Tocdown_'
+    botright vnew _Tocdown_
     " read the parsed headlines into the the buffer with the _Tocdown_
     exe 'r ' . g:plugin_path . '/.tocdown.txt'
+    set nomodified
+    set readonly
     " go the current edited file window
-    exe 1 . "wincmd w"
+    exe current_window . "wincmd w"
+    redraw!
   endif
 endfunction
 
