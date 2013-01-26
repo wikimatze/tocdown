@@ -93,7 +93,7 @@ feeling especially charitable, follow [wikimatze][wikimatze] on [Twitter][wikima
 
 This software is licensed under the [MIT license][mit].
 
-© 2011-2013 Matthias Guenther <matthias.guenther@wikimatze.de>
+© 2011-2013 Matthias Günther <matthias.guenther@wikimatze.de>
 
 [wikimatze]: http://wikimatze.de
 [wikimatze-twitter]: https://twitter.com/wikimatze
