@@ -1,3 +1,4 @@
+insideCodeBlock = false
 headings = IO.readlines(ARGV[0]).collect do |line|
   if line.match(/^((\s){0,3}([`]|[~]){3,})/)
     insideCodeBlock == false ? insideCodeBlock = true : insideCodeBlock = false
