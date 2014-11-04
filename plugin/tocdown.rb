@@ -1,5 +1,9 @@
+insideCodeBlock = false
 headings = IO.readlines(ARGV[0]).collect do |line|
-  line.match(/^[#]{1,4}/) ? ("  " * ($&.length - 1) + $'.strip) : nil
+  if line.match(/^((\s){0,3}([`]|[~]){3,})/)
+    insideCodeBlock == false ? insideCodeBlock = true : insideCodeBlock = false
+  end
+  (insideCodeBlock == false and line.match(/^(\s){0,3}[#]{1,4}/)) ? ("  " * ($&.length - 1) + $'.strip) : nil
 end
 
 headings.compact!
